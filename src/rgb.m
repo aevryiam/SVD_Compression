@@ -1,7 +1,7 @@
 % Select an image file
 [filename, pathname] = uigetfile({'*.jpg;*.png;*.bmp','Image Files'}, 'Select an image');
 if isequal(filename,0)
-    disp('User cancels.');
+    disp('User cancelled.');
     return;
 end
 img = imread(fullfile(pathname, filename));
